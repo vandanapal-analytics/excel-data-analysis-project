@@ -1,34 +1,34 @@
-# 📊 Excel Data Cleaning & Pivot Table Analysis
+# 📊 Retail Sales Data Cleaning & Pivot Table Analysis
 
 ## 📌 Project Overview
-Is project me maine ek **1500+ rows** ke messy aur complicated retail sales dataset ko complete clean kiya hai aur Excel Pivot Tables ka use karke real business insights generate kiye hain.
+In this project, I processed and analyzed a messy retail sales dataset containing over **1,500 rows** of transactional data. The primary objective was to clean structural inconsistencies, handle missing values, and leverage Excel Pivot Tables to extract actionable business insights.
 
 ---
 
-## 🛠️ Data Cleaning Challenges Solved
-Pivot Table lagane se pehle data me kaafi issues the, jinhe maine in techniques se fix kiya:
-1. **Remove Duplicates:** Data me se saare duplicate rows ko identify karke delete kiya (`Data Tab -> Remove Duplicates`).
-2. **Text Standardization (Casing):** `Payment Method` aur `Customer Segment` me lowercase/uppercase ki errors thin (jaise `upi` aur `UPI`). Unhe `=UPPER()` formula aur *Paste Special Values* ka use karke uniform CAPITAL letters me convert kiya.
-3. **Handling Missing Values:** `Region` aur `City` columns ke blank (missing) cells ko filter karke unhe **"Unknown"** text se fill kiya taaki Pivot Table me blank errors na aayein.
+## 🛠️ Data Cleaning Steps Performed
+Before conducting any analysis, the dataset required rigorous cleaning to ensure data integrity:
+1. **Deduplication:** Identified and eliminated duplicate records across the dataset using `Data Tab -> Remove Duplicates`.
+2. **Text Standardization:** Fixed casing inconsistencies in columns like `Payment Method` and `Customer Segment` (e.g., converting mixed cases like `upi` and `UPI`) using the `=UPPER()` function combined with *Paste Special Values*.
+3. **Handling Missing Values:** Screened the dataset for blank/null cells in the `Region` and `City` fields and standardized them by replacing empty cells with **"Unknown"** to prevent breakdown errors during pivot generation.
 
 ---
 
-## 📈 Key Insights & Results (Pivot Table Analysis)
+## 📈 Key Insights & Analytics (Pivot Table Results)
 
-* **Task 1: Top Region by Sales**
-  - **North Region** sabse top par raha, jahan **₹1,01,82,546** ki sabse zyada sales hui.
+* **Top Performing Region (Task 1)**
+  - The **North Region** emerged as the primary revenue driver, generating the highest total sales amounting to **₹10,182,546.11**.
   
-* **Task 2: Category & Product Breakdown**
-  - Data ko hierarchical structure me row-wise set kiya (Category -> Product) jisse pata chala ki `ELECTRONICS` me `LAPTOP` aur `CLOTHING` me `JACKET` top-selling items hain.
+* **Product Hierarchy & Category Breakdown (Task 2)**
+  - Organised product distributions hierarchically (`Category` -> `Product`) inside the rows, highlighting that **Laptops** dominate the `ELECTRONICS` sector, while **Jackets** lead the `CLOTHING` segment.
 
-* **Task 3: Date wise Sales Trend**
-  - `Order Date` column ke through pure 1.5 years ka sales breakdown analyze kiya.
+* **Date-Wise Sales Trend (Task 3)**
+  - Formatted and mapped the transaction timelines chronologically across the 1.5-year span to evaluate day-to-day revenue fluctuations.
 
-* **Task 4: Payment Method Break-up**
-  - **CASH (₹1.02 Crore+)** sabse zyada prefer kiya jaane wala payment mode raha, jiske baad **UPI** ka number aata hai.
+* **Payment Method Distribution (Task 4)**
+  - **CASH** remains the most dominant transactional channel, bringing in over **₹1.02 Crore**, closely followed by **UPI** as the runner-up medium.
 
 ---
 
-## 💻 Tech Stack Used
-* **Tool:** Microsoft Excel (Excel Online)
-* **Features:** Pivot Tables, Data Filters, Text Formulas (`UPPER`), Paste Special, Formatting.
+## 💻 Tech Stack & Tools Used
+* **Software:** Microsoft Excel (Excel Online Interface)
+* **Core Techniques:** Pivot Tables, Data Filtering, Text Transformations (`UPPER`), Paste Special, Layout Formatting.
